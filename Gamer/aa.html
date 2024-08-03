@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="scoreContainer">
+        <p id="score">Puan: 0</p>
+    </div>
+    <h1>Sayacı Kontrol Et</h1>
+    <div id="counter">0</div>
+    <div class="button-container">
+        <button id="incrementButton">Arttır</button>
+        <button id="btnExit">Azalt</button>
+        <button id="yenile">Yenile</button>
+    </div>
+    <div id="result"></div>
+
+    <!-- Menü ve Puan Listesi -->
+    <div id="menu">
+        <button id="showScores">Puan Listesi</button>
+        <div id="scoreList" style="display: none;">
+            <h2>Puan Listesi</h2>
+            <ul id="scoreListUl">
+                <!-- Puanlar buraya eklenecek -->
+            </ul>
+        </div>
+    </div>
+
+     <!-- Hakkında bölümü -->
+     <div id="aboutContainer">
+        <p id="about">Bu uygulama, beyin eegzersiz için yazılmştır</p>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
+

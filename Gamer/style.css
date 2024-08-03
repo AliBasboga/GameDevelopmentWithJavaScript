@@ -1,0 +1,154 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: linear-gradient(45deg, #ff9a9e, #fad0c4, #fbc2eb, #a6c0fe); /* Pastel renkler */
+    background-size: 400% 400%;
+    animation: backgroundChange 15s ease infinite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+@keyframes backgroundChange {
+    0% {
+        background-position: 0% 0%;
+    }
+    25% {
+        background-position: 100% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    75% {
+        background-position: 0% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+#counter {
+    font-size: 24px;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 450px;
+}
+
+.button-container {
+    display: flex;
+    gap: 10px; /* Butonlar arasında boşluk */
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    height: 70px;
+    width: 100px;
+    border-radius: 35px;
+    border: 2px solid black;
+    background-color: white; /* Buton arka plan rengi */
+    transition: background-color 0.3s, transform 0.3s; /* Hover efektleri için geçiş */
+}
+
+button:hover {
+    background-color: #f0f0f0; /* Hover durumunda arka plan rengi */
+    transform: scale(1.1); /* Hover durumunda buton büyütme */
+}
+
+@media (max-width: 600px) {
+    button {
+        width: 80px;
+        height: 60px;
+        font-size: 14px;
+    }
+
+    #counter {
+        font-size: 20px;
+    }
+}
+
+/* Puan konumu ve menü stilleri */
+#scoreContainer {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 18px;
+}
+
+#menu {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+#scoreList {
+    margin-top: 20px;
+    background-color: white;
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#scoreListUl {
+    list-style-type: none;
+    padding: 0;
+}
+
+
+/* Mevcut CSS kodlarınız */
+
+#scoreContainer {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 18px;
+    background-color: rgba(255, 255, 255, 0.7); /* Beyaz arka plan, %70 opaklık */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#aboutContainer {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-size: 14px; /* Küçük font boyutu */
+    background-color: rgba(255, 255, 255, 0.7); /* Beyaz arka plan, %70 opaklık */
+    padding: 10px;
+    border-radius: 5px;
+    max-width: 200px; /* Genişliği sınırlamak için */
+    text-align: center; /* Ortalamak için */
+}
+
+#menu {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+#scoreList {
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.7); /* Beyaz arka plan, %70 opaklık */
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#scoreListUl {
+    list-style-type: none;
+    padding: 0;
+}
+
+#about {
+    margin-top: 10px;
+    font-size: 12px; /* Daha küçük font boyutu */
+    color: #555; /* Daha açık renk */
+}
