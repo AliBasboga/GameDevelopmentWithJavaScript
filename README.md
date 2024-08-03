@@ -1,1 +1,1 @@
-merhaba ben js ile hergün buna benzer prooje üreteçem 
+merhaba ben js ile hergün proje üreteçem
